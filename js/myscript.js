@@ -13,15 +13,41 @@ let somma = 0;
 //     somma = somma + numUser;
 // }
 
-let i;
-while(i < 5){
+// let i = 0;
+// while(i < 5){
 
-    numUser = parseInt(prompt('Inserire un Numbers'));
-    console.log(numUser);
+//     numUser = parseInt(prompt('Inserire un Numbers'));
+//     console.log(numUser);
 
-    somma = somma + numUser;
+//     somma = somma + numUser;
 
-    i++;
+//     i++;
+// }
+
+// console.log('la somma è: ' + somma);
+
+
+// JSnack 2
+// Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
+
+// const a = 'alfa';
+// const b = 'fluscevole';
+
+const a = prompt('inserisci una parablas');
+const b = prompt('inserisci una parablas');
+
+const aWidth= `${a.length}`;
+const bWidth= `${b.length}`;
+
+console.log(aWidth);
+console.log(bWidth);
+
+if ( aWidth > bWidth ){
+    console.log(a + ' continene più lettere di ' + b);
+} else if (aWidth < bWidth){
+    console.log(b + ' continene più lettere di ' + a);
+} else {
+    console.log(a + ' continene lo settesso numero di careatteri di ' + b);
 }
 
-console.log('la somma è: ' + somma);
+
